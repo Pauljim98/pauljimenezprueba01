@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="373dp"
         android:layout_height="687dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="29dp"
         android:layout_marginBottom="16dp"
         android:visibility="visible"
@@ -137,66 +137,87 @@
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="107dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="32dp"
             android:ems="10"
-            android:inputType="text"
-            tools:layout_editor_absoluteX="134dp"
-            tools:layout_editor_absoluteY="32dp" />
+            android:inputType="@string/f_text_nombre"
+            app:layout_constraintStart_toEndOf="@+id/textNombre"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/editTextText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="106dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
             android:ems="10"
-            android:inputType="text"
-            tools:layout_editor_absoluteX="135dp"
-            tools:layout_editor_absoluteY="92dp" />
+            android:inputType="@string/f_text_apellido"
+            app:layout_constraintStart_toEndOf="@+id/textApellido"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/editTextText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="108dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="54dp"
             android:ems="10"
-            android:inputType="text"
-            tools:layout_editor_absoluteX="134dp"
-            tools:layout_editor_absoluteY="156dp" />
+            android:inputType="@string/f_text_dividendo"
+            app:layout_constraintStart_toEndOf="@+id/textDividiendo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/editTextText4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="112dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="28dp"
             android:ems="10"
-            android:inputType="text"
-            tools:layout_editor_absoluteX="129dp"
-            tools:layout_editor_absoluteY="231dp" />
+            android:inputType="@string/f_text_divisor"
+            app:layout_constraintStart_toEndOf="@+id/textDivisor"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/editTextText5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
             android:ems="10"
-            android:inputType="text"
-            tools:layout_editor_absoluteX="131dp"
-            tools:layout_editor_absoluteY="295dp" />
+            android:inputType="@string/f_text_parte_entera"
+            app:layout_constraintStart_toEndOf="@+id/textParteEntera"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/editTextText6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="109dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
-            android:inputType="text"
-            tools:layout_editor_absoluteX="133dp"
-            tools:layout_editor_absoluteY="345dp" />
+            android:inputType="@string/f_text_residuo"
+            app:layout_constraintStart_toEndOf="@+id/textResiduo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText5"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/editTextText7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="112dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
             android:ems="10"
-            android:inputType="text"
-            tools:layout_editor_absoluteX="131dp"
-            tools:layout_editor_absoluteY="410dp" />
+            android:inputType="@string/f_text_numero_invertido"
+            app:layout_constraintStart_toEndOf="@+id/textNumeroInvertido"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText6"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

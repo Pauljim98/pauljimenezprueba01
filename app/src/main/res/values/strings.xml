@@ -10,6 +10,16 @@
     <string name="f_btn_siguiente">Siguiente</string>
     <string name="f_btn_mostrar">Mostrar</string>
 
+    <string name="f_text_nombre"></string>
+    <string name="f_text_apellido"></string>
+    <string name="f_text_dividendo"></string>
+    <string name="f_text_divisor"></string>
+    <string name="f_text_parte_entera"></string>
+    <string name="f_text_residuo"></string>
+    <string name="f_text_numero_invertido"></string>
+    <string name="f_text_btn_siguiente"></string>
+    <string name="f_text_btn_mostrar"></string>
+
     <string name="s_nombre">Nombre</string>
     <string name="s_apellido">Apellido</string>
     <string name="s_dividendo">Dividendo</string>
