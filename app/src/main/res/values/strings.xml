@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">paul_jimenez_prueba01</string>
+    <string name="f_nombre">Nombre</string>
+    <string name="f_apellido">Apellido</string>
+    <string name="f_dividendo">Dividendo</string>
+    <string name="f_divisor">Divisor</string>
+    <string name="f_numero">Numero</string>
+
 </resources>
