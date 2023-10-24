@@ -4,6 +4,10 @@
     <string name="f_apellido">Apellido</string>
     <string name="f_dividendo">Dividendo</string>
     <string name="f_divisor">Divisor</string>
-    <string name="f_numero">Numero</string>
+    <string name="f_parte_entera">Parte Entera</string>
+    <string name="f_residuo">Residuo</string>
+    <string name="f_numero_invertido">Nùmero Invertido</string>
+    <string name="f_btn_siguiente">Siguiente</string>
+    <string name="f_btn_mostrar">Mostrar</string>
 
 </resources>

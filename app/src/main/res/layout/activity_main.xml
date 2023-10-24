@@ -47,18 +47,45 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="siguiente"
+        android:text="@string/f_btn_siguiente"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="409dp" />
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="521dp" />
 
     <Button
         android:id="@+id/button4"
+        android:layout_width="177dp"
+        android:layout_height="50dp"
+        android:text="@string/f_btn_mostrar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="595dp" />
+
+    <TextView
+        android:id="@+id/textParteEntera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mostrar resultados"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="489dp" />
+        android:text="@string/f_parte_entera"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="328dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textResiduo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f_residuo"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="369dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textNumeroInvertido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f_numero_invertido"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="446dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
