@@ -8,63 +8,93 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:layout_width="86dp"
         android:layout_height="wrap_content"
-        android:text="Nombres:"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/s_nombre"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Apellidos:"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="49dp"
+        android:text="@string/s_apellido"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="116dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dividiendo:"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="255dp"
+        android:text="@string/s_dividendo"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Divisor"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/s_divisor"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="254dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nùmero"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="275dp"
+        android:text="@string/s_numero"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Siguiente"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="409dp" />
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/s_btn_siguiente"
+        android:onClick="onClickShowThirdActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mostrar resultados"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="482dp" />
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/s_btn_cerrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

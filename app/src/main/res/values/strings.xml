@@ -10,4 +10,20 @@
     <string name="f_btn_siguiente">Siguiente</string>
     <string name="f_btn_mostrar">Mostrar</string>
 
+    <string name="s_nombre">Nombre</string>
+    <string name="s_apellido">Apellido</string>
+    <string name="s_dividendo">Dividendo</string>
+    <string name="s_divisor">Divisor</string>
+    <string name="s_residuo">Residuo</string>
+    <string name="s_numero">Nùmero</string>
+    <string name="s_btn_siguiente">Siguiente</string>
+    <string name="s_btn_cerrar">Cerrar</string>
+
+    <string name="t_nombre">Nombre</string>
+    <string name="t_apellido">Apellido</string>
+    <string name="t_dividendo">Dividendo</string>
+    <string name="t_divisor">Divisor</string>
+    <string name="t_numero">Nùmero</string>
+    <string name="t_btn_cerrar">Cerrar</string>
+
 </resources>
