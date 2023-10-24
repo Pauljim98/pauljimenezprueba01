@@ -10,52 +10,69 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombres:"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/t_nombre"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="47dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Apellidos"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/t_apellido"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="123dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dividiendo:"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/t_dividendo"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="212dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Divisor"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="46dp"
+        android:text="@string/t_divisor"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="266dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nùmero:"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/t_numero"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="344dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cerrar:"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="428dp" />
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="255dp"
+        android:text="@string/t_btn_cerrar"
+        android:onClick="onClickCloseThirdActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

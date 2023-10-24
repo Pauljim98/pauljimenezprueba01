@@ -11,11 +11,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="373dp"
         android:layout_height="687dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
         android:layout_marginBottom="16dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
         tools:visibility="visible">
 
@@ -24,21 +27,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
+            android:layout_marginTop="51dp"
             android:layout_marginBottom="43dp"
             android:text="@string/f_nombre"
+            android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/textApellido"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.29000002"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textDividiendo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginBottom="42dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="272dp"
             android:text="@string/f_dividendo"
-            app:layout_constraintBottom_toTopOf="@+id/textDivisor"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textApellido"
             tools:ignore="MissingConstraints" />
 
         <TextView
@@ -46,9 +54,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/f_numero_invertido"
+            android:visibility="visible"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="422dp" />
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="421dp" />
 
         <TextView
             android:id="@+id/textParteEntera"
@@ -57,6 +66,7 @@
             android:layout_marginStart="34dp"
             android:layout_marginBottom="22dp"
             android:text="@string/f_parte_entera"
+            android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/textResiduo"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
@@ -67,8 +77,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
             android:layout_marginTop="56dp"
-            android:text="@string/f_btn_siguiente"
             android:onClick="onClickShowSecondActivity"
+            android:text="@string/f_btn_siguiente"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textNumeroInvertido"
             tools:ignore="MissingConstraints" />
@@ -77,9 +88,10 @@
             android:id="@+id/textResiduo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="34dp"
-            android:layout_marginBottom="58dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="48dp"
             android:text="@string/f_residuo"
+            android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/textNumeroInvertido"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
@@ -91,6 +103,7 @@
             android:layout_marginStart="22dp"
             android:layout_marginTop="25dp"
             android:text="@string/f_btn_mostrar"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
             tools:ignore="MissingConstraints" />
@@ -102,6 +115,7 @@
             android:layout_marginStart="45dp"
             android:layout_marginBottom="38dp"
             android:text="@string/f_divisor"
+            android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/textParteEntera"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
@@ -109,13 +123,80 @@
         <TextView
             android:id="@+id/textApellido"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="19dp"
             android:layout_marginStart="45dp"
+            android:layout_marginEnd="277dp"
             android:layout_marginBottom="51dp"
             android:text="@string/f_apellido"
+            android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/textDividiendo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <EditText
+            android:id="@+id/editTextText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="410dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
