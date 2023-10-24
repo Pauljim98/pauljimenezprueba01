@@ -7,85 +7,97 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_nombre"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="373dp"
+        android:layout_height="687dp"
+        android:visibility="visible"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="78dp" />
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="28dp"
+        tools:visibility="visible">
 
-    <TextView
-        android:id="@+id/textApellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_apellido"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="140dp" />
+        <TextView
+            android:id="@+id/textNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_nombre"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="54dp" />
 
-    <TextView
-        android:id="@+id/textDividiendo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_dividendo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="211dp" />
+        <TextView
+            android:id="@+id/textDividiendo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_dividendo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="187dp" />
 
-    <TextView
-        android:id="@+id/textDivisor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_divisor"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="271dp" />
+        <TextView
+            android:id="@+id/textNumeroInvertido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_numero_invertido"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="422dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_btn_siguiente"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="521dp" />
+        <TextView
+            android:id="@+id/textParteEntera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_parte_entera"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="304dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="177dp"
-        android:layout_height="50dp"
-        android:text="@string/f_btn_mostrar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="595dp" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_btn_siguiente"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="497dp" />
 
-    <TextView
-        android:id="@+id/textParteEntera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_parte_entera"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="328dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/textResiduo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_residuo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="345dp" />
 
-    <TextView
-        android:id="@+id/textResiduo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_residuo"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="369dp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="177dp"
+            android:layout_height="50dp"
+            android:onClick="onClickShowMainActivity"
+            android:text="@string/f_btn_mostrar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="571dp" />
 
-    <TextView
-        android:id="@+id/textNumeroInvertido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_numero_invertido"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="446dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/textDivisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_divisor"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <TextView
+            android:id="@+id/textApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_apellido"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="116dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
